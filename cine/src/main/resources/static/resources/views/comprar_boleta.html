@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cine</title>
+    <script defer type="module" src="../js/comprar_boleto.js"></script>
+</head>
+
+<body>
+    <div class="row bg-dark">
+        <div class="col-2">
+            <img src="../img/—Pngtree—cinema popcorn vector png_3247726.png" alt="LOGO"
+                class="border border-warning border-3 m-2 rounded-circle position-absolute top-0 start-0" width=180px
+                height=180px>
+        </div>
+        <div class="col-10">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fs-4 ps-5">
+                <div class="container-fluid">
+                    <ul class="navbar-nav me-auto mb-2">
+                        <li class="nav-item ms-5">
+                            <a class="nav-link" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item ms-5">
+                            <a class="nav-link" href="./cartelera.html">Cartelera</a>
+                        </li>
+                        <li class="nav-item ms-5">
+                            <a class="nav-link" href="./comprar_boleta.html">Comprar Boleto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex form-inline ">
+                        <input class="form-control " type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-danger ms-2 text-white " type="submit">Buscar</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <main class="container  ">
+        <div class="row  m-4 d-flex justify-content-center">
+            <h3 class="col-4 text-end nombre_pelicula"> Nombre De La Película </h3>
+            <div class="col-2">
+                <div class="row">
+                    <h3 class="col-12 fecha">Fecha</h3>
+                    <p class="col-12 ms-4">Hora</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 ">
+                <div class="row ">
+                    <div class="col-12 shadow border border-secondary border-3 rounded-3 position-relative mb-5">
+                        <div class="row mb-3 mt-5 d-flex justify-content-center">
+                            <label for="inputCantBoletos" class="col-3 col-form-label text-end">Cantidad de
+                                boletos</label>
+                            <div class="col-2">
+                                <input type="text" class="form-control cantidadTxt" id="inputCantBoletos">
+                            </div>
+                            <label for="inputSillasDisponibles" class="col-3 col-form-label text-end">Cantidad de sillas
+                                disponibles</label>
+                            <div class="col-2">
+                                <input type="text" class="form-control sillas-disponibles" id="inputSillasDisponibles" readonly=»readonly>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <h3 class="col-12 fs-5">Seleccione su combo</h3>
+                        </div>
+
+                        <div class="row d-flex flex-row justify-content-center mt-3 mb-5">
+                            <div class="col-2 form-check form-check-inline">
+                                <input class="form-check-input select-combo" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="1000">
+                                    <label class="form-check-label inlineRadio1" for="inlineRadio1">Combo1</label>
+                            </div>
+                            <div class="col-2 form-check form-check-inline">
+                                <input class="form-check-input select-combo" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="2000">
+                                <label class="form-check-label inlineRadio2" for="inlineRadio2">Combo2</label>
+                            </div>
+                            <div class="col-2 form-check form-check-inline">
+                                <input class="form-check-input select-combo" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                    value="1500">
+                                <label class="form-check-label inlineRadio3" for="inlineRadio3">Combo3</label>
+                            </div>
+                            <div class="col-2 form-check form-check-inline">
+                                <input class="form-check-input select-combo" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                    value="1200">
+                                <label class="form-check-label inlineRadio3" for="inlineRadio3">Combo4</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row  shadow border border-secondary border-3 rounded-3 position-relative mt-5">
+                    <div class="col-12 d-flex justify-content-center area-total">
+                        <h3 class="m-5">Total</h3>
+                        <label class="m-5 fs-3 label-total"> $ 0.000.000</label>
+                        <div class="col-12 text-center position-absolute top-100 start-50 translate-middle">
+                            <button type="button" class="shadow btn btn-secondary fs-4 w-50 comprar">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 vh-100 bg-warning bg-gradient shadow-lg  border-start border-3 border-dark boder-3 ms-5 mb-5 mt-3 ">
+                <div class="row mt-5 ms-2 overflow-auto  h-75" >
+                    <div class="col-4  me-5 combos" >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="container mw-100">
+        <div class="row bg-dark p-4 fs-4 text-white-50">
+            <div class="col-3 m-3">
+                <p class="">Nombre de la Sala</p>
+            </div>
+            <div class="col-3 m-3">
+                <p class="">Número de soporte: xxx-xxx</p>
+                <p class="">Correo Electronico: xxxxxx@xxxx.xxx</p>
+            </div>
+            <div class="col-3 m-3">
+                <p class="">Dirección: xxx-xxxx-xx</p>
+
+                <div class="d-flex">
+                    <p class="">Redes Sociales</p>
+                    <img src="../img/facebook.png" alt="" width=35px height=30px>
+                    <img src="../img/instagram.png" width=30px height=30px alt="">
+                </div>
+            </div>
+            <div class="col-2">
+                <p>2022</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
