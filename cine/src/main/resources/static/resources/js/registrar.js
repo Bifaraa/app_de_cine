@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     async function peticion(datos) {
-        const request = await fetch('http://localhost:8080/api/user/create',{
+        const request = await fetch('https://vast-forest-15070312.herokuapp.com/api/user/create',{
             method: 'POST',
             body: JSON.stringify(datos),
             headers: {

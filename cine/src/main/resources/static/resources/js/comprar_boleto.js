@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async() => {
     document.querySelector('#inputSillasDisponibles').value = salasDeCine['sala_1']['sillas']
     document.querySelector('#') */
     let pedido = {}
-    const combos = await fetchData('https://vast-forest-06073.herokuapp.com/api/comida/list')
+    const combos = await fetchData('https://vast-forest-15070312.herokuapp.com/api/comida/list')
     let divCombos = document.querySelector('.combos')
             combos.map( (valor) => {
                 let div = document.createElement('div')
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', async() => {
         let salaDeCine
         let id_peli
         try{
-            const request = await fetch('http://localhost:8080/api/peliculas/sala',{
+            const request = await fetch('https://vast-forest-15070312.herokuapp.com/api/peliculas/sala',{
                 method: 'POST',
                 body: JSON.stringify(nombrePelicula),
                 mode: "cors",
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', async() => {
                     alert('Sala no encontrada')
                 }
         try{
-            const request = await fetch('http://localhost:8080/api/peliculas/id_pelicula',{
+            const request = await fetch('https://vast-forest-15070312.herokuapp.com/api/peliculas/id_pelicula',{
             method: 'POST',
             body: JSON.stringify(nombrePelicula),
             mode: "cors",
@@ -146,7 +146,7 @@ function valorSelecionado(){
 async function cargarIdCombo(nombreCombo){
     let id_combos
     try{
-        const request =  fetch('http://localhost:8080/api/comida/id',{
+        const request =  fetch('https://vast-forest-15070312.herokuapp.com/api/comida/id',{
             method: 'POST',
             body: JSON.stringify(nombreCombo),
             mode: "cors",
@@ -168,7 +168,7 @@ async function cargarIdCombo(nombreCombo){
 async function postPedido(pedido){
     let pedidos
     try{
-        const request =  fetch('http://localhost:8080/api/compra/create',{
+        const request =  fetch('https://vast-forest-15070312.herokuapp.com/api/compra/create',{
             method: 'POST',
             body: JSON.stringify(pedido),
             mode: "cors",

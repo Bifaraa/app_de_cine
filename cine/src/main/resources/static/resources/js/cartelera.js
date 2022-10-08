@@ -1,8 +1,8 @@
 let carrucel = true
 document.addEventListener('DOMContentLoaded', async() => {
     //Salas JSON
-    const peliculas = await fetchData('http://localhost:8080/api/peliculas/list')
-    const peliculasEstreno = await fetchData('http://localhost:8080/api/peliculas/list')
+    const peliculas = await fetchData('https://vast-forest-15070312.herokuapp.com/api/peliculas/list')
+    const peliculasEstreno = await fetchData('https://vast-forest-15070312.herokuapp.com/api/peliculas/list')
     const divCards = document.querySelector('.container-cards')
     const divCardsEstrenos = document.querySelector('.container-estrenos')
 

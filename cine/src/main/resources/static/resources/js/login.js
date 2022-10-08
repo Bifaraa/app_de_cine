@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         //const usuarios = await fetchData('http://localhost:8080/api/user/list')
         //console.log(usuarios)
         try{
-        const request = await fetch('http://localhost:8080/api/user/recibir',{
+        const request = await fetch('https://vast-forest-15070312.herokuapp.com/api/user/recibir',{
             method: 'POST',
             body: JSON.stringify(datos),
             mode: "cors",
