@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', async() => {
     btIniciar.addEventListener('click', irInicioSesion)
 
     //Cards
-    const peliculas = await fetchData('http://localhost:8090/api/peliculas/list')
-    const peliculasEstreno = await fetchData('http://localhost:8090/api/peliculas/list')
+    const peliculas = await fetchData('http://localhost:8080/api/peliculas/list')
+    const peliculasEstreno = await fetchData('http://localhost:8080/api/peliculas/list')
     const divCards = document.querySelector('.container-cards')
     const divCardsEstrenos = document.querySelector('.container-estrenos')
 
