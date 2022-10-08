@@ -3,7 +3,7 @@ package com.mintic.cine.modelo;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "pelicula")
+@Table(name = "PELICULA")
 public class Pelicula {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id_pelicula;
