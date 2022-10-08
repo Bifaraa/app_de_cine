@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async() => {
     document.querySelector('#inputSillasDisponibles').value = salasDeCine['sala_1']['sillas']
     document.querySelector('#') */
     let pedido = {}
-    const combos = await fetchData('http://localhost:8080/api/comida/list')
+    const combos = await fetchData('https://vast-forest-06073.herokuapp.com/api/comida/list')
     let divCombos = document.querySelector('.combos')
             combos.map( (valor) => {
                 let div = document.createElement('div')
